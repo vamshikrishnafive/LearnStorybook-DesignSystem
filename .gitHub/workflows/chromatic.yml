@@ -1,0 +1,13 @@
+name: 'Chromatic'
+on: push
+
+Job: 
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: yarn
+      - uses: chromaui/action@v1
+      with: 
+        projectToken: ${{ secrets.9b6d8f59e5b9 }}
+        token: ${{ secrets.9b6d8f59e5b9 }} 
